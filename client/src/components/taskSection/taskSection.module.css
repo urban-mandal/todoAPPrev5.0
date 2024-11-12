@@ -1,0 +1,70 @@
+.taskSection {
+  min-width: 250px;
+  height: calc(100vh - 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.taskSectionHeader {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 80px;
+}
+
+.taskSectionHeaderTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.taskSectionHeaderTitleCircle {
+  display: flex;
+  align-items: center;
+}
+
+.taskSectionHeaderTitle h3 {
+  font-size: 15px;
+  color: var(--text-color);
+  margin: 0;
+  margin-left: 10px;
+  height: 20px;
+}
+
+.taskSectionHeaderButton {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  color: rgb(26, 64, 255);
+  font-size: 12px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.circle {
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.todo {
+  background-color: #fe877e;
+}
+
+.progress {
+  background-color: #365ffe;
+}
+
+.done {
+  background-color: #00c49f;
+}

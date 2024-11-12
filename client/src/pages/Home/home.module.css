@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-color: var(--background-color);
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar > * {
+  width: 95%;
+}
+
+.user {
+  margin-top: 10px;
+  height: 50px;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: hover 0.3s ease;
+}
+
+.user:hover {
+  background-color: #d2d4d9;
+}
+
+.userImage {
+  width: 30px;
+  height: 30px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu {
+  margin-top: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu h3 {
+  font-size: var(--p-font-size);
+  font-weight: 500;
+  color: var(--text-secondary-color);
+  margin-bottom: 10px;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menuItems button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 0px;
+  text-align: left;
+  transition: all 0.1s ease;
+}
+
+.buttonHover:hover {
+  background-color: #ebe9e9;
+}
+
+.menuItems button h2 {
+  font-size: var(--p-font-size);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.menuItems:last-child {
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+
+.buttonNotActive {
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.buttonActive {
+  background-color: #232324;
+  color: white;
+}
+
+.main {
+  width: calc(100% - 205px);
+  height: calc(100vh - 12px);
+  background-color: #f0f1f4;
+  margin: 5px 5px 5px 0px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
